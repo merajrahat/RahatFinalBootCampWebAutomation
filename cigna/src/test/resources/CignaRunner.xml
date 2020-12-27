@@ -17,6 +17,7 @@
             <class name="com.cignatest.HomePageValidation"/>
             <class name="com.cignatest.LogInPageValidation"/>
             <class name="com.cignatest.ProductPageValidation"/>
+            <class name="com.cignatest.CareersPageValidation"/>
         </classes>
     </test>
 </suite>

@@ -16,6 +16,7 @@
             <class name="com.amazontest.HomePageValidation"/>
             <class name="com.amazontest.LogInPageValidation"/>
             <class name="com.amazontest.ProductPageValidation"/>
+            <class name="com.amazontest.CheckoutPageValidation"/>
         </classes>
     </test>
 </suite>
