@@ -30,7 +30,6 @@ public class NewsPageValidation extends TestBase {
 
     @Test (enabled = false)
     public void validateUserAbleToSearchForNews(){
-        logInPage.ableToSignIn();
         newsPage.searchNews();
     }
 }

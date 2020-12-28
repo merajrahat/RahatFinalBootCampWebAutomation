@@ -70,6 +70,8 @@ public class PostPage extends TestBase {
         ExtentTestManager.log("Scroll Down");
 
         clickOnWriteComment.sendKeys("Nice Picture",Keys.RETURN);
+        ExtentTestManager.log("Commented Nice Picture");
+        sleepFor(3);
 
     }
 }

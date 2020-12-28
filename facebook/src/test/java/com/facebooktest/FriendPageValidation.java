@@ -43,4 +43,9 @@ public class FriendPageValidation extends TestBase {
         friendPage.ableToAcceptFriendRequest();
     }
 
+    @Test (enabled = false)
+    public void validateUserAbleToCommentOnAFriend(){
+        friendPage.ableToCommentOnAFriend();
+    }
+
 }
