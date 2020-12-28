@@ -16,7 +16,8 @@
             <class name="com.citibanktest.FeaturePageValidation"/>
             <class name="com.citibanktest.HomePageValidation"/>
             <class name="com.citibanktest.LogInPageValidation"/>
-            <class name="com.citibanktest.ProductPageValidation"/>
+            <class name="com.citibanktest.BankingPageValidation"/>
+            <class name="com.citibanktest.MortgagePageValidation"/>
         </classes>
     </test>
 </suite>
