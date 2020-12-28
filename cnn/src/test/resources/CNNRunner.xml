@@ -16,6 +16,7 @@
             <class name="com.cnntest.HomePageValidation"/>
             <class name="com.cnntest.LogInPageValidation"/>
             <class name="com.cnntest.NewsPageValidation"/>
+            <class name="com.cnntest.CareerPageValidation"/>
         </classes>
     </test>
 </suite>
