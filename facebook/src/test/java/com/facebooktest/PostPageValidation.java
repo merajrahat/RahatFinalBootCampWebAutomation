@@ -1,14 +1,13 @@
 package com.facebooktest;
 
 import com.facebook.pages.LogInPage;
-import com.facebook.pages.NewsPage;
+import com.facebook.pages.PostPage;
 import com.peoplentech.finalbootcampwebautomation.base.TestBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class NewsPageValidation extends TestBase {
-
+public class PostPageValidation extends TestBase {
 
     private LogInPage logInPage;
 
@@ -19,18 +18,23 @@ public class NewsPageValidation extends TestBase {
         logInPage.ableToSignIn();
     }
 
-    private NewsPage newsPage;
+    private PostPage postPage;
 
     @BeforeMethod
-    public void pageFactorySetup2() {
+    public void pageFactorySetup5() {
 
-        newsPage = PageFactory.initElements(driver, NewsPage.class);
+        postPage = PageFactory.initElements(driver, PostPage.class);
 
     }
 
     @Test (enabled = false)
-    public void validateUserAbleToSearchForNews(){
-        logInPage.ableToSignIn();
-        newsPage.searchNews();
+    public void validateUserAbleToLikeAPost(){
+
+        postPage.ableToLikeAPost();
+    }
+
+    @Test
+    public void validateUserAbleToCommentOnAPost(){
+        postPage.ableToCommentOnAPost();
     }
 }

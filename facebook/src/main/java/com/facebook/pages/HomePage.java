@@ -1,4 +1,10 @@
 package com.facebook.pages;
 
-public class HomePage {
+import com.peoplentech.finalbootcampwebautomation.base.TestBase;
+
+public class HomePage extends TestBase {
+
+
+
+
 }

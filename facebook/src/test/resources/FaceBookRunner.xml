@@ -17,6 +17,7 @@
             <class name="com.facebooktest.HomePageValidation"/>
             <class name="com.facebooktest.LogInPageValidation"/>
             <class name="com.facebooktest.NewsPageValidation"/>
+            <class name="com.facebooktest.PostPageValidation"/>
         </classes>
     </test>
 </suite>
