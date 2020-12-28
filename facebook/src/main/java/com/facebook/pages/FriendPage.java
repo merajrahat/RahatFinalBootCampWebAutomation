@@ -59,14 +59,14 @@ public class FriendPage extends TestBase {
         sleepFor(3);
     }
 
-    public void ableToSendFriendRequest(){
+    public void ableToSendFriendRequest() {
         ableToFindFriends();
         clickOnFriend.click();
         ExtentTestManager.log("Clicked on specific name");
         sleepFor(3);
     }
 
-    public void ableToAcceptFriendRequest(){
+    public void ableToAcceptFriendRequest() {
         clickIcon.click();
         ExtentTestManager.log("Clicked on Icon");
         sleepFor(3);
@@ -75,7 +75,7 @@ public class FriendPage extends TestBase {
         sleepFor(3);
     }
 
-    public void ableToCommentOnAFriend(){
+    public void ableToCommentOnAFriend() {
         clickMyIcon.click();
         ExtentTestManager.log("Clicked on My Icon");
         sleepFor(3);
@@ -91,7 +91,7 @@ public class FriendPage extends TestBase {
         clickCommentToFriend.click();
         ExtentTestManager.log("Clicked Comment");
         sleepFor(3);
-        writeCommentToFriend.sendKeys("Nice Photos",Keys.RETURN);
+        writeCommentToFriend.sendKeys("Nice Photos", Keys.RETURN);
         ExtentTestManager.log("Commented Nice Photos on Friend");
         sleepFor(3);
 

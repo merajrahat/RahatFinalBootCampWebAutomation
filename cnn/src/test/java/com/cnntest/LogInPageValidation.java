@@ -11,13 +11,13 @@ public class LogInPageValidation extends TestBase {
     private LogInPage logInPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         logInPage = PageFactory.initElements(driver, LogInPage.class);
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToSignIn(){
+    @Test(enabled = false)
+    public void validateUserAbleToSignIn() {
 
         logInPage.signIn();
         logInPage.typeEmail();
@@ -25,8 +25,8 @@ public class LogInPageValidation extends TestBase {
         logInPage.clickOnLogInButton();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToLogOut(){
+    @Test(enabled = false)
+    public void validateUserAbleToLogOut() {
 
         logInPage.clickLogOutButton();
 

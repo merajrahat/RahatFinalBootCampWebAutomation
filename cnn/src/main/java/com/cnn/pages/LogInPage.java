@@ -2,7 +2,6 @@ package com.cnn.pages;
 
 import com.peoplentech.finalbootcampwebautomation.base.TestBase;
 import com.peoplentech.finalbootcampwebautomation.extent.ExtentTestManager;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -23,31 +22,31 @@ public class LogInPage extends TestBase {
     @FindBy(linkText = "Log Out")
     private WebElement clickLogOut;
 
-    public void signIn(){
+    public void signIn() {
         clickSignIn.click();
         ExtentTestManager.log("Clicked Sign in");
         sleepFor(3);
     }
 
-    public void typeEmail(){
+    public void typeEmail() {
         clickEmail.sendKeys("tester.auto@yahoo.com");
         ExtentTestManager.log("Clicked and typed email");
         sleepFor(3);
     }
 
-    public void typePassword(){
+    public void typePassword() {
         clickPassword.sendKeys("Practice#18");
         ExtentTestManager.log("Clicked and typed password");
         sleepFor(3);
     }
 
-    public void clickOnLogInButton(){
+    public void clickOnLogInButton() {
         clickLogIn.click();
         ExtentTestManager.log("Clicked on Log In button");
         sleepFor(3);
     }
 
-    public void clickLogOutButton(){
+    public void clickLogOutButton() {
         signIn();
         typeEmail();
         typePassword();

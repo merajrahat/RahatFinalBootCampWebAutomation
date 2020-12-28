@@ -213,7 +213,7 @@ public class TestBase {
 
     @AfterMethod
     public void cleanUp() {
-       // driver.close();
+        // driver.close();
         driver.quit();
     }
 

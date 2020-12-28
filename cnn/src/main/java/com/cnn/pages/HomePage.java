@@ -21,8 +21,7 @@ public class HomePage extends TestBase {
     private WebElement clickLiveTv;
 
 
-
-    public void changeLanguage(){
+    public void changeLanguage() {
         clickEdition.click();
         ExtentTestManager.log("Clicked on Edition");
         sleepFor(3);
@@ -31,7 +30,7 @@ public class HomePage extends TestBase {
         sleepFor(3);
     }
 
-    public void newOnUS(){
+    public void newOnUS() {
         clickonUS.click();
         ExtentTestManager.log("Clicked on US");
         sleepFor(3);
@@ -43,14 +42,14 @@ public class HomePage extends TestBase {
         sleepFor(3);
     }
 
-    public void watchLiveTv(){
+    public void watchLiveTv() {
         clickLiveTv.click();
         ExtentTestManager.log("Clicked on LIVE TV");
         sleepFor(3);
 
     }
 
-    public void pageCanGoBackward(){
+    public void pageCanGoBackward() {
         watchLiveTv();
         driver.navigate().back();
         ExtentTestManager.log("Page Goes Backword");

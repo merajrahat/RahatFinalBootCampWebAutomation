@@ -12,31 +12,31 @@ public class HomePageValidation extends TestBase {
     private HomePage homePage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-    @Test (enabled = false)
-    public void validateLanguageChange(){
+    @Test(enabled = false)
+    public void validateLanguageChange() {
 
         homePage.changeLanguage();
     }
 
-    @Test (enabled = false)
-    public void validateNewsOnUSAbleToBeClicked(){
+    @Test(enabled = false)
+    public void validateNewsOnUSAbleToBeClicked() {
 
         homePage.newOnUS();
     }
 
-    @Test (enabled = false)
-    public void validateUserCanWatchLiveTv(){
+    @Test(enabled = false)
+    public void validateUserCanWatchLiveTv() {
 
         homePage.watchLiveTv();
     }
 
-    @Test (enabled = false)
-    public void validateUserCanGoPageBackward(){
+    @Test(enabled = false)
+    public void validateUserCanGoPageBackward() {
 
         homePage.pageCanGoBackward();
     }

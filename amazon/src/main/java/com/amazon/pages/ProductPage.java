@@ -25,7 +25,7 @@ public class ProductPage extends TestBase {
     }
 
 
-    public void productPageValidate(){
+    public void productPageValidate() {
         clickOnSearchBar();
         String currentUrl = TestBase.driver.getCurrentUrl();
         String expectedURL = "https://www.amazon.com/s?k=Laptop&ref=nb_sb_noss";
@@ -35,7 +35,8 @@ public class ProductPage extends TestBase {
 
 
     }
-    public void ableToFilterSpecificBrandOfLaptop(){
+
+    public void ableToFilterSpecificBrandOfLaptop() {
         clickOnSearchBar();
         clickFilterChoiceHP.click();
         ExtentTestManager.log("User choose HP Brand");
@@ -43,7 +44,7 @@ public class ProductPage extends TestBase {
 
     }
 
-    public void selectSpecificPrice(){
+    public void selectSpecificPrice() {
         clickOnSearchBar();
         selectPrice.click();
         ExtentTestManager.log("User choose price under $500");

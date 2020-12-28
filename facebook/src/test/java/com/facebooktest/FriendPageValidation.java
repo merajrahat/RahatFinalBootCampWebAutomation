@@ -11,6 +11,7 @@ public class FriendPageValidation extends TestBase {
 
 
     private LogInPage logInPage;
+    private FriendPage friendPage;
 
     @BeforeMethod
     public void pageFactorySetup() {
@@ -19,8 +20,6 @@ public class FriendPageValidation extends TestBase {
         logInPage.ableToSignIn();
     }
 
-    private FriendPage friendPage;
-
     @BeforeMethod
     public void pageFactorySetup3() {
 
@@ -28,23 +27,23 @@ public class FriendPageValidation extends TestBase {
 
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToFindFriend(){
+    @Test(enabled = false)
+    public void validateUserAbleToFindFriend() {
         friendPage.ableToFindFriends();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToSendFriendRequest(){
+    @Test(enabled = false)
+    public void validateUserAbleToSendFriendRequest() {
         friendPage.ableToSendFriendRequest();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToAcceptFriendRequest(){
+    @Test(enabled = false)
+    public void validateUserAbleToAcceptFriendRequest() {
         friendPage.ableToAcceptFriendRequest();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToCommentOnAFriend(){
+    @Test(enabled = false)
+    public void validateUserAbleToCommentOnAFriend() {
         friendPage.ableToCommentOnAFriend();
     }
 

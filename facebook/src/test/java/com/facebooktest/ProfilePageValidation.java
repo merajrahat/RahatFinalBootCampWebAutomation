@@ -11,6 +11,7 @@ public class ProfilePageValidation extends TestBase {
 
 
     private LogInPage logInPage;
+    private ProfilePage profilePage;
 
     @BeforeMethod
     public void pageFactorySetup() {
@@ -19,8 +20,6 @@ public class ProfilePageValidation extends TestBase {
         logInPage.ableToSignIn();
     }
 
-    private ProfilePage profilePage;
-
     @BeforeMethod
     public void pageFactorySetup2() {
 
@@ -28,13 +27,13 @@ public class ProfilePageValidation extends TestBase {
 
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToUploadPhoto(){
+    @Test(enabled = false)
+    public void validateUserAbleToUploadPhoto() {
         profilePage.ableToUploadAPhoto();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToAddBioInProfile(){
+    @Test(enabled = false)
+    public void validateUserAbleToAddBioInProfile() {
         profilePage.ableToAddBioInMyProfile();
     }
 }

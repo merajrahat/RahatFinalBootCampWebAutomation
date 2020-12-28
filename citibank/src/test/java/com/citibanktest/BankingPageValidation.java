@@ -11,23 +11,23 @@ public class BankingPageValidation extends TestBase {
     private BankingPage bankingPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         bankingPage = PageFactory.initElements(driver, BankingPage.class);
     }
 
-    @Test (enabled = false)
-    public void validateUserCanSeeBankingOptions(){
+    @Test(enabled = false)
+    public void validateUserCanSeeBankingOptions() {
         bankingPage.checkTheirBankingOptions();
     }
 
-    @Test (enabled = false)
-    public void validateUserCanSeeDeatailsOfSpecificBanking(){
+    @Test(enabled = false)
+    public void validateUserCanSeeDeatailsOfSpecificBanking() {
         bankingPage.seeCheckingDetails();
     }
 
-    @Test (enabled = false)
-    public void validateUserCanCheckThierPremiumBankingOffer(){
+    @Test(enabled = false)
+    public void validateUserCanCheckThierPremiumBankingOffer() {
         bankingPage.seeTheirPremiumBankingOffer();
     }
 }

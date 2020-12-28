@@ -18,7 +18,7 @@ public class MortgagePage extends TestBase {
     private WebElement clickOnGoToMonthlyMortgagePaymentCalculator;
 
 
-    public void findMortgageCalculator(){
+    public void findMortgageCalculator() {
         clickOnLending.click();
         ExtentTestManager.log("Clicked on Lending");
         sleepFor(3);

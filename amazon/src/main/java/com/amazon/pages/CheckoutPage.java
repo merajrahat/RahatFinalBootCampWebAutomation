@@ -37,7 +37,7 @@ public class CheckoutPage extends TestBase {
     private WebElement clickOnCheckout;
 
 
-    public void userAbleToSignIn(){
+    public void userAbleToSignIn() {
         clickSignIn.click();
         ExtentTestManager.log("Click On Sign in");
         sleepFor(3);

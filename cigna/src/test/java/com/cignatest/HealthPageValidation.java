@@ -11,20 +11,20 @@ public class HealthPageValidation extends TestBase {
     private HealthPage healthPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         healthPage = PageFactory.initElements(driver, HealthPage.class);
     }
 
 
-    @Test (enabled = false)
-    public void validateTheirHealthPageOffers(){
+    @Test(enabled = false)
+    public void validateTheirHealthPageOffers() {
 
         healthPage.checkTheirHealthPage();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToCheckSpecficDetailsOfAHealthCoverage(){
+    @Test(enabled = false)
+    public void validateUserAbleToCheckSpecficDetailsOfAHealthCoverage() {
         healthPage.checkSpecificHealthCoverageOffer();
     }
 }

@@ -11,6 +11,7 @@ public class NewsPageValidation extends TestBase {
 
 
     private LogInPage logInPage;
+    private NewsPage newsPage;
 
     @BeforeMethod
     public void pageFactorySetup() {
@@ -19,8 +20,6 @@ public class NewsPageValidation extends TestBase {
         logInPage.ableToSignIn();
     }
 
-    private NewsPage newsPage;
-
     @BeforeMethod
     public void pageFactorySetup2() {
 
@@ -28,8 +27,8 @@ public class NewsPageValidation extends TestBase {
 
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToSearchForNews(){
+    @Test(enabled = false)
+    public void validateUserAbleToSearchForNews() {
         newsPage.searchNews();
     }
 }

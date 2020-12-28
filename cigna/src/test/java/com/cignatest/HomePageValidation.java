@@ -12,31 +12,31 @@ public class HomePageValidation extends TestBase {
     private HomePage homePage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-    @Test (enabled = false)
-    public void validateScrollToElement(){
+    @Test(enabled = false)
+    public void validateScrollToElement() {
 
         homePage.scrollToElement();
     }
 
-    @Test (enabled = false)
-    public void validateClickOnScrollElement(){
+    @Test(enabled = false)
+    public void validateClickOnScrollElement() {
 
         homePage.clickOnElementAfterScrollDown();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToSearchForMedicalTools(){
+    @Test(enabled = false)
+    public void validateUserAbleToSearchForMedicalTools() {
 
         homePage.searchForMedicalTools();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToHover(){
+    @Test(enabled = false)
+    public void validateUserAbleToHover() {
 
         homePage.tryHover();
     }

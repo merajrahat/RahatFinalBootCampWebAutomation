@@ -11,18 +11,18 @@ public class CareersPageValidation extends TestBase {
     private CareersPage careersPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         careersPage = PageFactory.initElements(driver, CareersPage.class);
     }
 
-    @Test (enabled = false)
-    public void validateTheirCareersPageIsAccessible(){
+    @Test(enabled = false)
+    public void validateTheirCareersPageIsAccessible() {
         careersPage.scrollToCareersThenCLick();
     }
 
-    @Test (enabled = false)
-    public void validateUserCanCheckCareersForVeterans(){
+    @Test(enabled = false)
+    public void validateUserCanCheckCareersForVeterans() {
         careersPage.checkWhatTheyOfferForMilitaryVeteran();
     }
 }

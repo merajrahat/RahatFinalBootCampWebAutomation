@@ -19,7 +19,7 @@ public class BankingPage extends TestBase {
     @FindBy(linkText = "PREMIUM BANKING")
     private WebElement clickPremiumBanking;
 
-    public void checkTheirBankingOptions(){
+    public void checkTheirBankingOptions() {
         clickOnBanking.click();
         ExtentTestManager.log("Clicked on Banking");
         sleepFor(3);
@@ -31,7 +31,7 @@ public class BankingPage extends TestBase {
         sleepFor(3);
     }
 
-    public void seeCheckingDetails(){
+    public void seeCheckingDetails() {
         clickOnBanking.click();
         ExtentTestManager.log("Clicked on Banking");
         sleepFor(3);
@@ -46,7 +46,7 @@ public class BankingPage extends TestBase {
         sleepFor(3);
     }
 
-    public void seeTheirPremiumBankingOffer(){
+    public void seeTheirPremiumBankingOffer() {
         seeCheckingDetails();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 300)");

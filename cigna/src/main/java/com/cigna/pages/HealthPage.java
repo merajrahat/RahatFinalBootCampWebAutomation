@@ -27,7 +27,7 @@ public class HealthPage extends TestBase {
         sleepFor(2);
     }
 
-    public void checkTheirHealthPage(){
+    public void checkTheirHealthPage() {
         hoverOverIndividualsAndFamilies();
         clickHealthAndWellness.click();
         ExtentTestManager.log("Clicked on Health And Wellness");
@@ -37,7 +37,7 @@ public class HealthPage extends TestBase {
         sleepFor(3);
     }
 
-    public void checkSpecificHealthCoverageOffer(){
+    public void checkSpecificHealthCoverageOffer() {
         checkTheirHealthPage();
         clickOnAutism.click();
         ExtentTestManager.log("Clicked on Autism");

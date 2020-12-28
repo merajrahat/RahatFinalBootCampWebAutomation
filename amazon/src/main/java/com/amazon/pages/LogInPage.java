@@ -27,7 +27,7 @@ public class LogInPage extends TestBase {
     private WebElement clickSignInButton;
 
 
-    public void userAbleToSignIn(){
+    public void userAbleToSignIn() {
         clickSignIn.click();
         ExtentTestManager.log("Click On Sign in");
         sleepFor(3);
@@ -41,7 +41,7 @@ public class LogInPage extends TestBase {
         sleepFor(3);
     }
 
-    public void userAbleToSignOut(){
+    public void userAbleToSignOut() {
         userAbleToSignIn();
         WebElement user = driver.findElement(By.id("nav-link-accountList"));
 

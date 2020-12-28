@@ -11,24 +11,24 @@ public class HomePageValidation extends TestBase {
     private HomePage homePage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-    @Test (enabled = false)
-    public void validateSpecialOffersPageCanBeChecked(){
+    @Test(enabled = false)
+    public void validateSpecialOffersPageCanBeChecked() {
 
         homePage.chekoutTheirSpecialOffers();
     }
 
-    @Test (enabled = false)
-    public void validateScrollToElement(){
+    @Test(enabled = false)
+    public void validateScrollToElement() {
         homePage.scrollToElement();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToLearnMoreAboutCitiBank(){
+    @Test(enabled = false)
+    public void validateUserAbleToLearnMoreAboutCitiBank() {
         homePage.seeTheirStory();
     }
 }

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 public class PostPageValidation extends TestBase {
 
     private LogInPage logInPage;
+    private PostPage postPage;
 
     @BeforeMethod
     public void pageFactorySetup() {
@@ -18,8 +19,6 @@ public class PostPageValidation extends TestBase {
         logInPage.ableToSignIn();
     }
 
-    private PostPage postPage;
-
     @BeforeMethod
     public void pageFactorySetup5() {
 
@@ -27,14 +26,14 @@ public class PostPageValidation extends TestBase {
 
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToLikeAPost(){
+    @Test(enabled = false)
+    public void validateUserAbleToLikeAPost() {
 
         postPage.ableToLikeAPost();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToCommentOnAPost(){
+    @Test(enabled = false)
+    public void validateUserAbleToCommentOnAPost() {
         postPage.ableToCommentOnAPost();
     }
 }

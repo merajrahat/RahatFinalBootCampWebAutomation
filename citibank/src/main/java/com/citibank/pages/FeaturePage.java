@@ -2,9 +2,7 @@ package com.citibank.pages;
 
 import com.peoplentech.finalbootcampwebautomation.base.TestBase;
 import com.peoplentech.finalbootcampwebautomation.extent.ExtentTestManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
@@ -31,7 +29,7 @@ public class FeaturePage extends TestBase {
         sleepFor(3);
     }
 
-    public void checkAllCreditCards(){
+    public void checkAllCreditCards() {
         checkFreaturedCreditCardOptions();
         clickViewAllCreditCards.click();
         ExtentTestManager.log("Click View All Credit Cards");
@@ -44,7 +42,7 @@ public class FeaturePage extends TestBase {
         sleepFor(3);
     }
 
-    public void checkThierAllZeroAPRCreditCards(){
+    public void checkThierAllZeroAPRCreditCards() {
         checkFreaturedCreditCardOptions();
         clickZeroAPROption.click();
         ExtentTestManager.log("CLicked 0% Intro APR Credit Cards");

@@ -16,7 +16,7 @@ public class LogInPage extends TestBase {
     private WebElement clickPassword;
 
 
-    public void ableToSignIn(){
+    public void ableToSignIn() {
         clickEmail.sendKeys("carnal.mcmuffin@yahoo.com");
         ExtentTestManager.log("Email was entered");
         sleepFor(3);

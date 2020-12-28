@@ -7,14 +7,14 @@ import org.testng.annotations.Test;
 
 public class LogInPageValidation extends TestBase {
 
-    @Test (enabled = false)
-    public void validateUserAbleToLogIn(){
+    @Test(enabled = false)
+    public void validateUserAbleToLogIn() {
         LogInPage logInPage = PageFactory.initElements(driver, LogInPage.class);
         logInPage.userAbleToSignIn();
     }
 
-    @Test (enabled = false)
-    public void vaidateUserAbleToLogOut(){
+    @Test(enabled = false)
+    public void vaidateUserAbleToLogOut() {
         LogInPage logInPage = PageFactory.initElements(driver, LogInPage.class);
         logInPage.userAbleToSignOut();
     }

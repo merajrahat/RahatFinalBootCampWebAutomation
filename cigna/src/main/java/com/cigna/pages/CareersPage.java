@@ -33,7 +33,7 @@ public class CareersPage extends TestBase {
         sleepFor(3);
     }
 
-    public void checkWhatTheyOfferForMilitaryVeteran(){
+    public void checkWhatTheyOfferForMilitaryVeteran() {
         clickAboutUs.click();
         ExtentTestManager.log("Clicked on About Us");
         sleepFor(2);

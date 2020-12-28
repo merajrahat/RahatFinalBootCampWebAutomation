@@ -25,7 +25,8 @@ public class ProductPage extends TestBase {
         ExtentTestManager.log("User hover over Individuals and Families");
         sleepFor(2);
     }
-        public void checkTheirProducts(){
+
+    public void checkTheirProducts() {
         hoverOverIndividualsAndFamilies();
         clickOnPlansAndServices.click();
         ExtentTestManager.log("licked on Plans and Services");
@@ -33,12 +34,12 @@ public class ProductPage extends TestBase {
         clickOnPlansAndServicesOverview.click();
         ExtentTestManager.log("Clicked on Plans and Services Overview");
         sleepFor(3);
-        }
+    }
 
-        public void checkProductForDentalPlans(){
+    public void checkProductForDentalPlans() {
         checkTheirProducts();
         clickOnDentalInsurancePlans.click();
         ExtentTestManager.log("Clicked on Dental Insurance Plans");
         sleepFor(3);
-        }
+    }
 }

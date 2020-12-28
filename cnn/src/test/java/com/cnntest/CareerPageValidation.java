@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class CareerPageValidation extends TestBase {
 
-    @Test (enabled = false)
+    @Test(enabled = false)
     public void validateUserAbleCheckCareerPage() {
         CareerPage careerPage = PageFactory.initElements(driver, CareerPage.class);
         careerPage.seeTheirCareerOptions();

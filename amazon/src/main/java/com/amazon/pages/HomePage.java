@@ -9,7 +9,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
 public class HomePage extends TestBase {
     private static org.apache.log4j.Logger LOGGER = Logger.getLogger(HomePage.class);
@@ -23,7 +22,6 @@ public class HomePage extends TestBase {
 
     @FindBy(id = "nav-cart")
     private WebElement clickOnCart;
-
 
 
     public void clickOnSearchBar() {
@@ -44,7 +42,7 @@ public class HomePage extends TestBase {
         ExtentTestManager.log("Scroll Up");
     }
 
-    public void hoverOverText(){
+    public void hoverOverText() {
         WebElement user = driver.findElement(By.linkText("Prime"));
 
         Actions actions = new Actions(driver);
@@ -53,7 +51,7 @@ public class HomePage extends TestBase {
         sleepFor(3);
     }
 
-    public void pageBackwardAndForward(){
+    public void pageBackwardAndForward() {
         clickBestSellers.click();
         ExtentTestManager.log("Click on Best Sellers");
         sleepFor(3);
@@ -72,7 +70,7 @@ public class HomePage extends TestBase {
         sleepFor(2);
     }
 
-    public void ableToClickOnCart(){
+    public void ableToClickOnCart() {
         clickOnCart.click();
         ExtentTestManager.log("Able to click on cart");
         sleepFor(3);

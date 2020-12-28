@@ -27,7 +27,7 @@ public class HomePage extends TestBase {
         sleepFor(3);
     }
 
-    public void scrollToElement(){
+    public void scrollToElement() {
         WebElement element = driver.findElement(By.linkText("Our Story"));
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -36,7 +36,7 @@ public class HomePage extends TestBase {
         sleepFor(3);
     }
 
-    public void seeTheirStory(){
+    public void seeTheirStory() {
         scrollToElement();
         clickOnOurStory.click();
         ExtentTestManager.log("Clicked on Our Story");

@@ -1,6 +1,33 @@
 package com.citibank.pages;
 
-public class LogInPage {
+import com.peoplentech.finalbootcampwebautomation.base.TestBase;
+import com.peoplentech.finalbootcampwebautomation.extent.ExtentTestManager;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-    //can't create an account without a credit card or debit card. So couldn't Test login page
+public class LogInPage extends TestBase {
+
+
+    @FindBy(id = "username")
+    private WebElement clickOnUsername;
+
+    @FindBy(id = "password")
+    private WebElement clickOnPassword;
+
+    @FindBy(id = "signInBtn")
+    private WebElement clickSignOnButton;
+
+
+    public void userUnableToLogInWithInvalidCredentials() {
+        clickOnUsername.sendKeys("RogerPark@gmail.com");
+        ExtentTestManager.log("User put email address");
+        sleepFor(3);
+        clickOnPassword.sendKeys("SeeMyBankInfo");
+        ExtentTestManager.log("User put password");
+        sleepFor(3);
+        clickSignOnButton.click();
+        ExtentTestManager.log("User clicked Sign On Button");
+        sleepFor(3);
+
+    }
 }

@@ -11,7 +11,7 @@ public class CareerPage extends TestBase {
     @FindBy(linkText = "Work for CNN")
     private WebElement clickWorkForCNN;
 
-    public void seeTheirCareerOptions(){
+    public void seeTheirCareerOptions() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         ExtentTestManager.log("Scroll Down");

@@ -1,6 +1,5 @@
 package com.amazontest;
 
-import com.amazon.pages.HomePage;
 import com.amazon.pages.ProductPage;
 import com.peoplentech.finalbootcampwebautomation.base.TestBase;
 import org.openqa.selenium.support.PageFactory;
@@ -12,23 +11,23 @@ public class ProductPageValidation extends TestBase {
     private ProductPage productPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
         productPage = PageFactory.initElements(driver, ProductPage.class);
     }
 
 
-    @Test (enabled = false)
-    public void validateFilterChoice(){
+    @Test(enabled = false)
+    public void validateFilterChoice() {
         productPage.ableToFilterSpecificBrandOfLaptop();
     }
 
-    @Test (enabled = false)
-    public void validateProductPageValidation(){
+    @Test(enabled = false)
+    public void validateProductPageValidation() {
         productPage.productPageValidate();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToSelectSpecificPrice(){
+    @Test(enabled = false)
+    public void validateUserAbleToSelectSpecificPrice() {
         productPage.selectSpecificPrice();
     }
 }

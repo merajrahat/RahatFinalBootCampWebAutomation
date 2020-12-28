@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 public class CheckoutPageValidation extends TestBase {
 
 
-    @Test (enabled = false)
-    public void validateCheckoutPage(){
+    @Test(enabled = false)
+    public void validateCheckoutPage() {
         CheckoutPage checkoutPage = PageFactory.initElements(driver, CheckoutPage.class);
         checkoutPage.userAbleToCheckoutAProduct();
     }

@@ -11,25 +11,25 @@ public class FeaturePageValidation extends TestBase {
     private FeaturePage featurePage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         featurePage = PageFactory.initElements(driver, FeaturePage.class);
     }
 
-    @Test (enabled = false)
-    public void validateAbleToLookAtFeaturedCreditCardOptions(){
+    @Test(enabled = false)
+    public void validateAbleToLookAtFeaturedCreditCardOptions() {
 
         featurePage.checkFreaturedCreditCardOptions();
     }
 
-    @Test (enabled = false)
-    public void validateAbleToSeeAllCreditCards(){
+    @Test(enabled = false)
+    public void validateAbleToSeeAllCreditCards() {
 
         featurePage.checkAllCreditCards();
     }
 
-    @Test (enabled = false)
-    public void validateUserAbleToCheckAllTheirZeroAPRCreditCards(){
+    @Test(enabled = false)
+    public void validateUserAbleToCheckAllTheirZeroAPRCreditCards() {
         featurePage.checkThierAllZeroAPRCreditCards();
     }
 

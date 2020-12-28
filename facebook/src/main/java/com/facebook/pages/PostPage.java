@@ -10,7 +10,6 @@ import org.openqa.selenium.support.FindBy;
 public class PostPage extends TestBase {
 
 
-
     @FindBy(xpath = "//html[@id='facebook']/body/div[1]/div/div[1]//div[@role='banner']/div[2]/div//input[@role='combobox']")
     private WebElement clickSearchButton;
 
@@ -31,9 +30,7 @@ public class PostPage extends TestBase {
     private WebElement clickOnWriteComment;
 
 
-
-
-    public void ableToLikeAPost(){
+    public void ableToLikeAPost() {
         clickSearchButton.sendKeys("Ami Real", Keys.RETURN);
         ExtentTestManager.log("Clicked Find Friends");
         sleepFor(3);
@@ -53,7 +50,7 @@ public class PostPage extends TestBase {
 
     }
 
-    public void ableToCommentOnAPost(){
+    public void ableToCommentOnAPost() {
         clickSearchButton.sendKeys("Ami Real", Keys.RETURN);
         ExtentTestManager.log("Clicked Find Friends");
         sleepFor(3);
@@ -69,7 +66,7 @@ public class PostPage extends TestBase {
         sleepFor(3);
         ExtentTestManager.log("Scroll Down");
 
-        clickOnWriteComment.sendKeys("Nice Picture",Keys.RETURN);
+        clickOnWriteComment.sendKeys("Nice Picture", Keys.RETURN);
         ExtentTestManager.log("Commented Nice Picture");
         sleepFor(3);
 

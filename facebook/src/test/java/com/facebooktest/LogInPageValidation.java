@@ -12,14 +12,14 @@ public class LogInPageValidation extends TestBase {
     private LogInPage logInPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         logInPage = PageFactory.initElements(driver, LogInPage.class);
     }
 
 
-    @Test (enabled = false)
-    public void validateUserAbleToLogIn(){
+    @Test(enabled = false)
+    public void validateUserAbleToLogIn() {
         logInPage.ableToSignIn();
     }
 }

@@ -11,25 +11,25 @@ public class NewsPageValidation extends TestBase {
     private NewsPage newsPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         newsPage = PageFactory.initElements(driver, NewsPage.class);
     }
 
-    @Test (enabled = false)
-    public void validateScrollToAfricaNews(){
+    @Test(enabled = false)
+    public void validateScrollToAfricaNews() {
 
         newsPage.scrollToNewsOnAfrica();
     }
 
-    @Test (enabled = false)
-    public void validateScrollAndClickAndValidateAsiaNews(){
+    @Test(enabled = false)
+    public void validateScrollAndClickAndValidateAsiaNews() {
         newsPage.scrollAndClickAsia();
 
     }
 
-    @Test (enabled = false)
-    public void validateUserCanTypeAndSeachNewsFromSearchBar(){
+    @Test(enabled = false)
+    public void validateUserCanTypeAndSeachNewsFromSearchBar() {
 
         newsPage.typeOnSearchBarForNews();
     }

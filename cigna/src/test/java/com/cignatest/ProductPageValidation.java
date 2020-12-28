@@ -11,20 +11,20 @@ public class ProductPageValidation extends TestBase {
     private ProductPage productPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         productPage = PageFactory.initElements(driver, ProductPage.class);
     }
 
 
-    @Test (enabled = false)
-    public void validateProductsTheyOffer(){
+    @Test(enabled = false)
+    public void validateProductsTheyOffer() {
         productPage.checkTheirProducts();
 
     }
 
-    @Test (enabled = false)
-    public void validateProductForDentalPlans(){
+    @Test(enabled = false)
+    public void validateProductForDentalPlans() {
         productPage.checkProductForDentalPlans();
     }
 }

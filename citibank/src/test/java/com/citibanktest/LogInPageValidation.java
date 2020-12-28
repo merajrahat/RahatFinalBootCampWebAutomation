@@ -1,6 +1,24 @@
 package com.citibanktest;
 
-public class LogInPageValidation {
+import com.citibank.pages.LogInPage;
+import com.peoplentech.finalbootcampwebautomation.base.TestBase;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-    //can't create an account without a credit card or debit card. So couldn't Test login page
+public class LogInPageValidation extends TestBase {
+
+
+    private LogInPage logInPage;
+
+    @BeforeMethod
+    public void pageFactorySetup() {
+
+        logInPage = PageFactory.initElements(driver, LogInPage.class);
+    }
+
+    @Test(enabled = false)
+    public void validateUserUnableToLogInWithInvalidCredentials() {
+        logInPage.userUnableToLogInWithInvalidCredentials();
+    }
 }

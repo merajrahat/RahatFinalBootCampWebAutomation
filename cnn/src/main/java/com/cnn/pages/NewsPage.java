@@ -18,7 +18,7 @@ public class NewsPage extends TestBase {
     private WebElement clickOnSearchBox;
 
 
-    public void scrollToNewsOnAfrica(){
+    public void scrollToNewsOnAfrica() {
         WebElement element = driver.findElement(By.linkText("Africa"));
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -28,7 +28,7 @@ public class NewsPage extends TestBase {
 
     }
 
-    public void scrollAndClickAsia(){
+    public void scrollAndClickAsia() {
         scrollToNewsOnAfrica();
         clickOnAsia.click();
         ExtentTestManager.log("Clicked on Asia");
@@ -41,7 +41,7 @@ public class NewsPage extends TestBase {
         sleepFor(3);
     }
 
-    public void typeOnSearchBarForNews(){
+    public void typeOnSearchBarForNews() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 2100)");
         ExtentTestManager.log("Page scrolled down");

@@ -51,7 +51,7 @@ public class ProfilePage extends TestBase {
         sleepFor(3);
     }
 
-    public void ableToAddBioInMyProfile(){
+    public void ableToAddBioInMyProfile() {
         clickMyIcon.click();
         ExtentTestManager.log("Clicked on My Icon");
         sleepFor(3);
