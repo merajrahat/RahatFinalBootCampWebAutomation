@@ -6,19 +6,20 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
@@ -28,6 +29,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -216,5 +219,102 @@ public class TestBase {
         // driver.close();
         driver.quit();
     }
+
+    // Alert Handling Method
+    public Alert alertHandler() {
+        Alert alert = driver.switchTo().alert();
+        return alert;
+    }
+
+
+    //Cookies Handling
+    public WebDriver.Options cookiesHandler() {
+        WebDriver.Options cookie = driver.manage();
+        return cookie;
+    }
+
+
+    //Selecting items from the drop down menu
+    public Select selectInList(WebElement element) {
+        Select select = new Select(element);
+        return select;
+    }
+
+
+    public void setImplicitWait() {
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    }
+
+    public WebDriverWait setExplicitWait() {
+        WebDriverWait w = new WebDriverWait(driver, 40);
+        return w;
+    }
+
+
+    //Popup window Handling
+    public void switchToChildWindow() {
+        Set<String> handler = driver.getWindowHandles();
+        Iterator<String> it = handler.iterator();
+        String parentWindow = it.next();
+        String childWindow = it.next();
+        driver.switchTo().window(childWindow);
+    }
+
+
+    // Mouse Hover option.
+    public void mouseHover(WebElement element) {
+        Actions action = new Actions(driver);
+        action.moveToElement(element).build().perform();
+    }
+
+
+    //Drag and Drop option.
+    public void dragAndDrop(WebElement source, WebElement target) {
+        Actions action = new Actions(driver);
+        action.dragAndDrop(source, target).build().perform();
+    }
+
+
+    //Navigation.
+    public WebDriver.Navigation navigate() {
+
+        WebDriver.Navigation navigation = new WebDriver.Navigation() {
+            @Override
+            public void back() {
+            }
+
+            @Override
+            public void forward() {
+            }
+
+            @Override
+            public void to(String url) {
+            }
+
+            @Override
+            public void to(URL url) {
+            }
+
+            @Override
+            public void refresh() {
+            }
+        };
+        return navigation;
+    }
+
+
+    //Scrolling option on the web page by horizontally and vertically.
+    public void scroll(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+
+    //Taking Screenshot.
+    public void screenShot() throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(src, new File("C:\\Users\\tafat\\screenshot.png"));
+    }
+
 
 }
